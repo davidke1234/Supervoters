@@ -43,7 +43,7 @@ namespace SuperVoters
                 mm.To.Add("superVotersWSU@gmail.com");
 
                 SmtpClient sc = new SmtpClient("smtp.gmail.com", 587);
-                sc.Credentials = new NetworkCredential("superVotersWSU", "oeugcvbrzwbgthpw"); // this is an app password generated from Google
+                sc.Credentials = new NetworkCredential("<userName>", "<pw>"); 
                 sc.EnableSsl = true;             
                 sc.Send(mm);
             }
